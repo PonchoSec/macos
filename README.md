@@ -1,4 +1,4 @@
-# macos
+# macOS
 MacOS Scripts for academic & work purposes.
 
 ### License: 
