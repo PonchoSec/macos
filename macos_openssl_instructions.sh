@@ -1,6 +1,6 @@
 # attack box
 # run first
-openssl req -x509 -newkey rsa:4096 -keyout key.pem -subj "/CN=$cn\/emailAddress=admin@$cn/C=US/ST=Ohio/L=Columbus/O=Widgets Inc/OU=Some Unit" -out cert.pem -days 1 nodes 2>/dev/null
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -subj "/CN=$cn\/emailAddress=admin@$cn/C=US/ST=Ohio/L=Columbus/O=Widgets Inc/OU=Some Unit" -out cert.pem -days 1 -nodes 2>/dev/null
 
 # run second
 openssl s_server -quiet -key key.pem -cert cert.pem -port 9001
